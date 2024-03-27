@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding and Margin</title>
+
+  <style>
+    *{
+      margin: 1rem;
+      padding: 1rem;
+      box-sizing:border-box;
+      /* outline: 1px solid red; */
+    }
+    body{
+      min-height: 100vh;
+      
+    }
+    /* This is the main container for everything  */
+    .mainContainer{
+      width: 70%;
+      /* min-width: 400pxs; */
+      padding: 2rem;
+      /* height: 200vh; */
+      margin: 0 auto;
+      font-size: 3rem;
+      /* background-image: -webkit-radial-gradient(red, blue); */
+    }
+
+    /*short self introductory paragraph */
+    .intro p{
+      width: 100%;
+      height: auto;
+      font-size: 100%;
+      white-space: wrap;
+      text-align: justify;
+    }
+    
+    /* The header contains my picture, name and profession */
+    header{ 
+      width: 100%;
+      /* min-width: 300px; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top-left-radius: 50px ;
+      border-top-right-radius: 50px;
+      
+      background-color: gold;
+    }
+
+    /* This apply style to the figure container */
+    header figure{
+      width: 50%;
+      /* background-color: black; */
+      /* border-radius: 50%;
+      border: 1px solid #ddd; */
+      
+    }
+
+    /* This apply style to the image */
+    header figure img{
+     width: 100%;
+     height: auto;
+     /* min-width: 100px; */
+     /* border: 5px double gray; */
+     border-radius: 50%;
+     /* border-radius: 50%; */
+    }
+
+    /* This style the h1 in the header section */
+    header h1{
+      /* font-size: 3rem; */
+      white-space: nowrap;
+    }
+
+    .skillDisplay{
+      /* min-width: 300px; */
+    }
+
+    .skillDisplay ul{
+      padding: 0;
+      margin: 0;
+      border: 1px solid #ddd;
+    }
+    .skillDisplay li{
+      list-style-type: none;
+      border: 1px solid #ddd;
+      /* font-size: 3rem; */
+    }
+    .skillDisplay li:first-child{
+      border-top: 0;
+    }
+    .skillDisplay li:last-child{
+      border-bottom: 0;
+    }
+    .skillDisplay h2 ,h3{
+      font-size: 3rem;
+    }
+    
+    /*  */
+    .contactInfo{
+      background-color: #ddd;
+    }
+    .contactInfo ul{
+      display: flex;
+      justify-content: space-around;
+
+    }
+    .contactInfo ul li{
+      list-style-type:none;
+      
+    }
+    .contactInfo ul li a{
+      font-size: 4rem;
+      text-decoration: none;
+      background-color: gold;
+      border-radius: 50px;
+      opacity: 0.6;
+      transition: all .5s ease-in;
+    
+    }
+    .contactInfo ul li a:hover{
+      opacity: 1;
+      box-shadow: -4px 3px 3px 3px red;
+      transition: all .5s ease-out;
+
+    }
+    
+    /* @media screen and (min-width: 100px ) and (max-width: 300px) {
+      body{
+        background-color: rgba(218, 165, 87, 0.589);
+      }
+      .mainContainer{
+        min-width: 400px;
+      }
+      .header{
+        min-width: 400px;
+      }
+      .skillDisplay{
+        min-width: 400px;
+      }
+      .contactInfo ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+      }
+    }
+
+
+    
+    @media screen and (min-width: 320px) and (max-width: 500) {
+      body{
+        background-color: lightblue;
+      }
+      .mainContainer{
+        min-width: 400px;
+      }
+      .header{
+        min-width: 400px;
+      }
+      .skillDisplay{
+        min-width: 400px;
+      }
+      .contactInfo ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+      }
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 600){
+      body{
+        background-color: rgba(84, 184, 45, 0.363);
+      }
+      .mainContainer{
+        min-width: 400px;
+      }
+      .header{
+        min-width: 400px;
+      }
+      .skillDisplay{
+        min-width: 400px;
+      }
+      .contactInfo ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+      }
+    } */
+
+    
+
+  </style>
+
+</head>
+<body>
+  <div class="mainContainer">
+    <header>
+      <figure>
+        <img src="GDSC.jpg" alt="My picture" >
+      </figure>
+      <h1>Victor Manzo</h1>
+    </header>
+  
+    <section class="intro">
+      <p>
+        My name is Victor Manzo, a 400 Level Computer Science student at Moddibbo Adama University, Yola.  I'm currently a recipient of Power Learn Project Software Engineering Scholarship
+      </p>
+    </section>
+  
+    <section class="skillDisplay">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Taiwind CSS</li>
+        <li>JavaScript</li>
+        <li>React Js</li>
+      </ul>
+  
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Team work</li>
+        <li>Leadership Skill</li>
+        <li>Community management</li>
+        <li>communication Skill</li>
+        <li>Public Speaking</li>
+      </ul>
+    </section>
+  
+    <section class="contactInfo">
+      <p>
+        Check on my social Media Handles <span class="arrowDown">&DownArrow;&DownArrow;&DownArrow;</span>
+      </p>
+      <ul>
+        <li>
+          <a href="mailto:manzovictor200@gmail.com">Send mail</a>
+        </li>
+  
+        <li>
+          <a href="#facebook">Facebook</a>
+        </li>
+  
+        <li>
+          <a href="#twitter">Twitter</a>
+        </li>
+  
+        <li>
+          <a href="#Instagram">Instagram</a>
+        </li>
+      </ul>
+    </section>
+  
+  </div>
+</body>
+</html>
